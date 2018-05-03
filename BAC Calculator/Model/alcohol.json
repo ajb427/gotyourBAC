@@ -1,0 +1,32 @@
+[
+
+ {
+    "name": "Ipa Double",
+    "proof": 0.085,
+    "acoholType": "Beer",
+    "servingSize": 12,
+    "alcoholPicture": "double_ipa.png"
+},
+{
+    "name": "Stout",
+    "proof": 0.08,
+    "acoholType": "Beer",
+    "servingSize": 12,
+    "alcoholPicture": "stout.png"
+},
+{
+    "name": "Ale",
+    "proof": 0.065,
+    "acoholType": "Beer",
+    "servingSize": 12,
+    "alcoholPicture": "ale.png"
+},
+{
+    "name": "Fruit Beer",
+    "proof": 0.051,
+    "acoholType": "Beer",
+    "servingSize": 12,
+    "alcoholPicture": "fruit_beer.png"
+}
+
+]
