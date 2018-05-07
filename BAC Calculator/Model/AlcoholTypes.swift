@@ -9,7 +9,7 @@
 import UIKit
 
 enum Alcohol: String, Codable {
-    case Beer, Cocktail, Spirits, Wine
+    case Beer, Cocktail, Spirit, Wine
     
     var image: UIImage? {
         return UIImage(named: self.rawValue)
@@ -19,8 +19,8 @@ enum Alcohol: String, Codable {
 struct AlcoholTypes: Codable {
     var name: String
     var proof: Float
-    var acoholType: Alcohol
-    var servingSize: Int
+    var alcoholType: Alcohol
+    var servingSize: Float
     var alcoholPicture: String
     
     static func retrieve() -> [AlcoholTypes] {

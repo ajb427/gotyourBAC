@@ -15,6 +15,8 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var weightLabel: UILabel!
 //    @IBOutlet weak var tempLabel: UILabel!
     
+    var genderValue = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -38,15 +40,19 @@ class FirstViewController: UIViewController {
         {
         case 0:
 //            tempLabel.text = "Male";
-            let genderValue = 0
+            genderValue = 0
+            
         case 1:
 //            tempLabel.text = "Female";
-            let genderValue = 1
+            genderValue = 1
+
         default:
             break
         }
+       
         
     }
+    
     
 }
 

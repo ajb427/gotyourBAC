@@ -18,8 +18,11 @@
 		34124AB7208F9FF10016655D /* PopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34124AB6208F9FF10016655D /* PopOverViewController.swift */; };
 		348B9FB1209A62DA007CECDE /* AlcoholTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348B9FB0209A62DA007CECDE /* AlcoholTableViewCell.swift */; };
 		348B9FB3209A69BD007CECDE /* AlcoholTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348B9FB2209A69BD007CECDE /* AlcoholTypes.swift */; };
-		348B9FB5209B84BE007CECDE /* alcohol.json in Resources */ = {isa = PBXBuildFile; fileRef = 348B9FB4209B84BE007CECDE /* alcohol.json */; };
 		348B9FB7209B8CA6007CECDE /* DrinksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348B9FB6209B8CA6007CECDE /* DrinksTableViewCell.swift */; };
+		348B9FBD209B9374007CECDE /* alcohol.json in Resources */ = {isa = PBXBuildFile; fileRef = 348B9FBC209B9374007CECDE /* alcohol.json */; };
+		348B9FC0209B9812007CECDE /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 348B9FBE209B9812007CECDE /* Model.xcdatamodeld */; };
+		348BA000209BA02F007CECDE /* BAC+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348B9FFE209BA02F007CECDE /* BAC+CoreDataClass.swift */; };
+		348BA001209BA02F007CECDE /* BAC+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348B9FFF209BA02F007CECDE /* BAC+CoreDataProperties.swift */; };
 		34C82285208FA47900A8AA1A /* shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C82284208FA47900A8AA1A /* shared.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,8 +61,11 @@
 		34124AB6208F9FF10016655D /* PopOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverViewController.swift; sourceTree = "<group>"; };
 		348B9FB0209A62DA007CECDE /* AlcoholTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholTableViewCell.swift; sourceTree = "<group>"; };
 		348B9FB2209A69BD007CECDE /* AlcoholTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoholTypes.swift; sourceTree = "<group>"; };
-		348B9FB4209B84BE007CECDE /* alcohol.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = alcohol.json; sourceTree = "<group>"; };
 		348B9FB6209B8CA6007CECDE /* DrinksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksTableViewCell.swift; sourceTree = "<group>"; };
+		348B9FBC209B9374007CECDE /* alcohol.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = alcohol.json; path = ../../../alcohol.json; sourceTree = "<group>"; };
+		348B9FBF209B9812007CECDE /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		348B9FFE209BA02F007CECDE /* BAC+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BAC+CoreDataClass.swift"; sourceTree = "<group>"; };
+		348B9FFF209BA02F007CECDE /* BAC+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BAC+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		34C82284208FA47900A8AA1A /* shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shared.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,18 +117,18 @@
 		34124A83207FD7050016655D /* BAC Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				348B9FFE209BA02F007CECDE /* BAC+CoreDataClass.swift */,
+				348B9FFF209BA02F007CECDE /* BAC+CoreDataProperties.swift */,
+				348B9FB8209B8E22007CECDE /* Table View Cells */,
 				348B9FA7209A5092007CECDE /* Model */,
-				34124AB6208F9FF10016655D /* PopOverViewController.swift */,
+				348B9FB9209B8E6C007CECDE /* Controllers */,
 				34124A84207FD7050016655D /* AppDelegate.swift */,
-				34124A86207FD7050016655D /* FirstViewController.swift */,
-				34124A88207FD7050016655D /* SecondViewController.swift */,
+				348B9FBE209B9812007CECDE /* Model.xcdatamodeld */,
 				34124A8A207FD7050016655D /* Main.storyboard */,
 				34C82284208FA47900A8AA1A /* shared.swift */,
 				34124A8D207FD7050016655D /* Assets.xcassets */,
 				34124A8F207FD7050016655D /* LaunchScreen.storyboard */,
 				34124A92207FD7050016655D /* Info.plist */,
-				348B9FB0209A62DA007CECDE /* AlcoholTableViewCell.swift */,
-				348B9FB6209B8CA6007CECDE /* DrinksTableViewCell.swift */,
 			);
 			path = "BAC Calculator";
 			sourceTree = "<group>";
@@ -149,9 +155,28 @@
 			isa = PBXGroup;
 			children = (
 				348B9FB2209A69BD007CECDE /* AlcoholTypes.swift */,
-				348B9FB4209B84BE007CECDE /* alcohol.json */,
+				348B9FBC209B9374007CECDE /* alcohol.json */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		348B9FB8209B8E22007CECDE /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				348B9FB6209B8CA6007CECDE /* DrinksTableViewCell.swift */,
+				348B9FB0209A62DA007CECDE /* AlcoholTableViewCell.swift */,
+			);
+			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
+		348B9FB9209B8E6C007CECDE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				34124AB6208F9FF10016655D /* PopOverViewController.swift */,
+				34124A86207FD7050016655D /* FirstViewController.swift */,
+				34124A88207FD7050016655D /* SecondViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34124A91207FD7050016655D /* LaunchScreen.storyboard in Resources */,
-				348B9FB5209B84BE007CECDE /* alcohol.json in Resources */,
+				348B9FBD209B9374007CECDE /* alcohol.json in Resources */,
 				34124A8E207FD7050016655D /* Assets.xcassets in Resources */,
 				34124A8C207FD7050016655D /* Main.storyboard in Resources */,
 			);
@@ -289,14 +314,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				348BA000209BA02F007CECDE /* BAC+CoreDataClass.swift in Sources */,
 				34124AB7208F9FF10016655D /* PopOverViewController.swift in Sources */,
 				348B9FB1209A62DA007CECDE /* AlcoholTableViewCell.swift in Sources */,
 				348B9FB7209B8CA6007CECDE /* DrinksTableViewCell.swift in Sources */,
 				34C82285208FA47900A8AA1A /* shared.swift in Sources */,
 				34124A89207FD7050016655D /* SecondViewController.swift in Sources */,
+				348B9FC0209B9812007CECDE /* Model.xcdatamodeld in Sources */,
 				34124A85207FD7050016655D /* AppDelegate.swift in Sources */,
 				348B9FB3209A69BD007CECDE /* AlcoholTypes.swift in Sources */,
 				34124A87207FD7050016655D /* FirstViewController.swift in Sources */,
+				348BA001209BA02F007CECDE /* BAC+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +616,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		348B9FBE209B9812007CECDE /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				348B9FBF209B9812007CECDE /* Model.xcdatamodel */,
+			);
+			currentVersion = 348B9FBF209B9812007CECDE /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 34124A79207FD7050016655D /* Project object */;
 }

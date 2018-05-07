@@ -36,13 +36,16 @@ class PopOverViewController: UIViewController, UITableViewDelegate, UITableViewD
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-    //    Shared.shared.alcoholName = names[indexPath.row]
+        guard let savedContent = BAC(name: alcohol[indexPath.row].name, servingSize: alcohol[indexPath.row].servingSize, proof: alcohol[indexPath.row].proof) else {
+            
+            return
+            
+        }
+    
         
-        /*
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
-        self.present(newViewController, animated: true, completion: nil)
- */
+        
+        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+        
         self.dismiss(animated: true, completion: nil)
         
     }

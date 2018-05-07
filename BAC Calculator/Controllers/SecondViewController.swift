@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -14,7 +15,14 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     @IBOutlet var tableView: UITableView!
     
-    var alcohol = [AlcoholTypes]()
+    @IBOutlet weak var bac: UILabel!
+    
+    var previousConsumed:Float = 0.0
+    
+    var currentConsumed:Float = 0.0
+    
+    var alcohol = [BAC]()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,15 +30,25 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.dataSource = self
         tableView.delegate = self
         
-        alcohol = AlcoholTypes.retrieve()
+ //       alcohol = BAC.retrieve()
+    
         tableView.reloadData()
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    override func viewDidAppear(_ animated: Bool) {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext{
+            if let bacArray = try? context.fetch(BAC.fetchRequest() as NSFetchRequest<BAC>){
+                alcohol = bacArray
+                tableView.reloadData()
+                
+            }
+        }
+    }
     
     // Select item from tableView
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -49,16 +67,26 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         if let cell = cell as? DrinksTableViewCell {
             let alcoholNames = self.alcohol[indexPath.row]
-            
+
             cell.drinksLabel.text = alcoholNames.name
+            
+            previousConsumed = currentConsumed
+            
+            currentConsumed = ((alcoholNames.servingSize * alcoholNames.proof) * 5.14) + previousConsumed
+            
         }
         
+        bac.text = "\(currentConsumed)"
         return cell
+        
     }
+    
     
     @IBAction func barButtonTapped(_ sender: UIBarButtonItem) {
     
     }
+    
+    
     
     
 }

@@ -99,7 +99,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <navigationBar key="tableHeaderView" opaque="NO" contentMode="scaleToFill" translucent="NO" id="tOb-A2-pj9">
+                        <navigationBar key="tableHeaderView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translucent="NO" id="tOb-A2-pj9">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="1" green="0.24116738130000001" blue="0.16206767959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -118,6 +118,13 @@
                                 </navigationItem>
                             </items>
                         </navigationBar>
+                        <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BAC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gYa-Ug-jff">
+                            <rect key="frame" x="0.0" y="116" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell2" id="jtc-YH-QMO" customClass="DrinksTableViewCell" customModule="BAC_Calculator" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
@@ -143,6 +150,7 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
                     <connections>
+                        <outlet property="bac" destination="gYa-Ug-jff" id="2Zu-pH-ynI"/>
                         <outlet property="btnSelect" destination="cD4-Nx-C48" id="Ejx-NL-Bj8"/>
                         <outlet property="tableView" destination="xMx-8i-fNy" id="LSJ-Vh-2QN"/>
                     </connections>
