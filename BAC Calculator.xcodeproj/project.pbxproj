@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3403741920A0F9C000B59A21 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3403741820A0F9C000B59A21 /* ThirdViewController.swift */; };
 		34124A85207FD7050016655D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34124A84207FD7050016655D /* AppDelegate.swift */; };
 		34124A87207FD7050016655D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34124A86207FD7050016655D /* FirstViewController.swift */; };
 		34124A89207FD7050016655D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34124A88207FD7050016655D /* SecondViewController.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3403741820A0F9C000B59A21 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		34124A81207FD7050016655D /* BAC Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BAC Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34124A84207FD7050016655D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34124A86207FD7050016655D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				34124AB6208F9FF10016655D /* PopOverViewController.swift */,
 				34124A86207FD7050016655D /* FirstViewController.swift */,
 				34124A88207FD7050016655D /* SecondViewController.swift */,
+				3403741820A0F9C000B59A21 /* ThirdViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				34124A85207FD7050016655D /* AppDelegate.swift in Sources */,
 				348B9FB3209A69BD007CECDE /* AlcoholTypes.swift in Sources */,
 				34124A87207FD7050016655D /* FirstViewController.swift in Sources */,
+				3403741920A0F9C000B59A21 /* ThirdViewController.swift in Sources */,
 				348BA001209BA02F007CECDE /* BAC+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

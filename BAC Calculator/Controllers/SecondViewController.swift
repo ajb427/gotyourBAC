@@ -21,8 +21,13 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     var currentConsumed:Float = 0.0
     
+    var finalBAC:Float = 0.0
+    
     var alcohol = [BAC]()
-
+    
+    var gender = Int()
+    
+    let vc = FirstViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,9 +79,11 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
             
             currentConsumed = ((alcoholNames.servingSize * alcoholNames.proof) * 5.14) + previousConsumed
             
+            finalBAC = ((currentConsumed)/(180.0 * 0.73)) - (0.015 * 1.0)
+            
         }
-        
-        bac.text = "\(currentConsumed)"
+
+        bac.text = " BAC = \(finalBAC)"
         return cell
         
     }

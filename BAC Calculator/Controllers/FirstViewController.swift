@@ -15,11 +15,11 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var weightLabel: UILabel!
 //    @IBOutlet weak var tempLabel: UILabel!
     
-    var genderValue = 0
+    var genderValue = Int()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional svarp after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,21 +36,41 @@ class FirstViewController: UIViewController {
         
     }
     @IBAction func genderAction(_ sender: UISegmentedControl) {
+
         switch genderButton.selectedSegmentIndex
         {
         case 0:
 //            tempLabel.text = "Male";
+            
+            let vc = SecondViewController(nibName: "SecondViewController", bundle: nil)
             genderValue = 0
             
+            navigationController?.pushViewController(vc, animated: true)
+    
         case 1:
 //            tempLabel.text = "Female";
+            let vc = SecondViewController(nibName: "SecondViewController", bundle: nil)
             genderValue = 1
+            
+            navigationController?.pushViewController(vc, animated: true)
 
         default:
             break
         }
        
+
+    }
+    
+   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      /* let destViewController: SecondViewController = segue.destination as SecondViewController
         
+        destViewController.gender = genderValue
+       */
+        if segue.destination is SecondViewController
+        {
+            let vc = segue.destination as? SecondViewController
+            vc?.gender = genderValue
+        }
     }
     
     

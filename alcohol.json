@@ -1,0 +1,434 @@
+[
+	{
+    "name": "Ale",
+    "proof": 0.065,
+    "alcoholType": "Beer",
+    "servingSize": 12,
+    "alcoholPicture": "ale.png"
+},
+{
+	"name": "Brown Ale",
+        "proof": 0.05,
+        "alcoholType": "Beer",
+	"servingSize": 12,
+	"alcoholPicture": "brown_ale.png"
+},
+{
+    "name": "Fruit Beer",
+    "proof": 0.051,
+    "alcoholType": "Beer",
+    "servingSize": 12,
+    "alcoholPicture": "fruit_beer.png"
+},
+{
+	"name": "Ipa",
+        "proof": 0.06,
+        "alcoholType": "Beer",
+	"servingSize": 12,
+	"alcoholPicture": "ipa.png"
+    },
+{
+    "name": "Ipa Double",
+    "proof": 0.085,
+    "alcoholType": "Beer",
+    "servingSize": 12,
+    "alcoholPicture": "double_ipa.png"
+},
+{
+	"name": "Lager",
+        "proof": 0.05,
+        "alcoholType": "Beer",
+	"servingSize": 12,
+	"alcoholPicture": "lager.png"
+    },
+{
+	"name": "Pilsner",
+        "proof": 0.04,
+        "alcoholType": "Beer",
+	"servingSize": 12,
+	"alcoholPicture": "pilsner.png"
+    },
+    {
+	"name": "Porter",
+        "proof": 0.05,
+        "alcoholType": "Beer",
+	"servingSize": 12,
+	"alcoholPicture": "porter.png"
+    },
+{
+    "name": "Stout",
+    "proof": 0.08,
+    "alcoholType": "Beer",
+    "servingSize": 12,
+    "alcoholPicture": "stout.png"
+},
+
+{
+    "name": "Bloody Mary",
+    "proof": 0.115,
+    "alcoholType": "Cocktail",
+    "servingSize": 6,
+    "alcoholPicture": "bloody_mary.png"
+},
+{
+    "name": "Cosmopolitan",
+    "proof": 0.273,
+    "alcoholType": "Cocktail",
+    "servingSize": 2.75,
+    "alcoholPicture": "cosmopolitan.png"
+},
+    
+{
+    "name": "Gin and Tonic",
+    "proof": 0.13,
+    "alcoholType": "Cocktail",
+    "servingSize": 12,
+    "alcoholPicture": "gin_and_tonic.png"
+},
+{
+    "name": "Jack and Coke",
+    "proof": 0.11,
+    "alcoholType": "Cocktail",
+    "servingSize": 8,
+    "alcoholPicture": "jack_and_coke.png"
+},
+{
+    "name": "Kamikaze",
+    "proof": 0.29,
+    "alcoholType": "Cocktail",
+    "servingSize": 2,
+    "alcoholPicture": "kamikaze.png"
+},
+{
+    "name": "Lemon Drop",
+    "proof": 0.20,
+    "alcoholType": "Cocktail",
+    "servingSize": 4,
+    "alcoholPicture": "lemon_drop.png"
+},
+{
+    "name": "Long Island Iced Tea",
+    "proof": 0.22,
+    "alcoholType": "Cocktail",
+    "servingSize": 7,
+    "alcoholPicture": "long_island_iced_tea.png"
+},
+{
+    "name": "Mai-Tai",
+    "proof": 0.177,
+    "alcoholType": "Cocktail",
+    "servingSize": 10,
+    "alcoholPicture": "may-tai.png"
+},
+{
+    "name": "Manhattan",
+    "proof": 0.33,
+    "alcoholType": "Cocktail",
+    "servingSize": 2.6,
+    "alcoholPicture": "manhattan.png"
+    },
+{
+    "name": "Margarita",
+    "proof": 0.333,
+    "alcoholType": "Cocktail",
+    "servingSize": 3,
+    "alcoholPicture": "margarita.png"
+    
+},
+{
+    "name": "Martini",
+    "proof": 0.32,
+    "alcoholType": "Cocktail",
+    "servingSize": 5,
+    "alcoholPicture": "martini.png"
+},
+{
+    "name": "Martini, Apple",
+    "proof": 0.26,
+    "alcoholType": "Cocktail",
+    "servingSize": 4,
+    "alcoholPicture": "apple_martini.png"
+},
+{
+    "name": "Mimosa",
+    "proof": 0.12,
+    "alcoholType": "Cocktail",
+    "servingSize": 5,
+    "alcoholPicture": "mimosa.png"
+},
+{
+    "name": "Mojito",
+    "proof": 0.133,
+    "alcoholType": "Cocktail",
+    "servingSize": 13.5,
+    "alcoholPicture": "mojito.png"
+},
+{
+    "name": "Moscow Mule",
+    "proof": 0.117,
+    "alcoholType": "Cocktail",
+    "servingSize": 6,
+    "alcoholPicture": "moscow_mule.png"
+},
+{
+    "name": "Old Fashioned",
+    "proof": 0.402,
+    "alcoholType": "Cocktail",
+    "servingSize": 2.75,
+    "alcoholPicture": "old_fashioned.png"
+},
+{
+    "name": "Pina_Colada",
+    "proof": 0.133,
+    "alcoholType": "Cocktail",
+    "servingSize": 13,
+    "alcoholPicture": "pina_colada.png"
+},
+
+{
+    "name": "Screwdriver",
+    "proof": 0.114,
+    "alcoholType": "Cocktail",
+    "servingSize": 7,
+    "alcoholPicture": "screwdriver.png"
+},
+
+{
+    "name": "Tequila Sunrise",
+    "proof": 0.133,
+    "alcoholType": "Cocktail",
+    "servingSize": 5.7,
+    "alcoholPicture": "tequila_suntrise.png"
+},
+
+
+{
+    "name": "Absinthe",
+    "proof": 0.60,
+    "alcoholType": "Spirit",
+    "servingSize": 1.5,
+    "alcoholPicture": "absinthe.png"
+},
+{
+    "name": "Bourbon",
+    "proof": 0.60,
+    "alcoholType": "Spirit",
+    "servingSize": 1.5,
+    "alcoholPicture": "bourbon.png"
+},
+{
+    "name": "Brandy",
+    "proof": 0.43,
+    "alcoholType": "Spirit",
+    "servingSize": 1.5,
+    "alcoholPicture": "brandy.png"
+},
+{
+    "name": "Cask Whiskey",
+    "proof": 0.60,
+    "alcoholType": "Spirit",
+    "servingSize": 1.5,
+    "alcoholPicture": "cask_whiskey.png"
+},
+{
+    "name": "Everclear",
+    "proof": 0.80,
+    "alcoholType": "Spirit",
+    "servingSize": 1.5,
+    "alcoholPicture": "ever_clear.png"
+},
+{
+    "name": "Gin",
+    "proof": 0.40,
+    "alcoholType": "Spirit",
+    "servingSize": 1.5,
+    "alcoholPicture": "gin.png"
+},
+{
+    "name": "Grain Alcohol",
+    "proof": 0.95,
+    "alcoholType": "Spirit",
+    "servingSize": 1.5,
+    "alcoholPicture": "grain_alcohol.png"
+},
+{
+    "name": "Rum",
+    "proof": 0.40,
+    "alcoholType": "Spirit",
+    "servingSize": 1.5,
+    "alcoholPicture": "rum.png"
+},
+{
+    "name": "Sake",
+    "proof": 0.20,
+    "alcoholType": "Spirit",
+    "servingSize": 6,
+    "alcoholPicture": "sake.png"
+},
+{
+    "name": "Tequila",
+    "proof": 0.40,
+    "alcoholType": "Spirit",
+    "servingSize": 1.5,
+    "alcoholPicture": "tequila.png"
+},
+{
+    "name": "Vodka",
+    "proof": 0.40,
+    "alcoholType": "Spirit",
+    "servingSize": 1.5,
+    "alcoholPicture": "vodka.png"
+},
+{
+    "name": "Whiskey",
+    "proof": 0.40,
+    "alcoholType": "Spirit",
+    "servingSize": 1.5,
+    "alcoholPicture": "whiskey.png"
+},
+
+
+
+{
+    "name": "Barbera",
+    "proof": 0.153,
+    "alcoholType": "Wine",
+    "servingSize": 5,
+    "alcoholPicture": "barbera.png"
+},
+
+{
+    "name": "Cabernet",
+    "proof": 0.13,
+    "alcoholType": "Wine",
+    "servingSize": 5,
+    "alcoholPicture": "cabernet.png"
+},
+{
+    "name": "Cabernet Sauvignon",
+    "proof": 0.13,
+    "alcoholType": "Wine",
+    "servingSize": 5,
+    "alcoholPicture": "cabernet_sauvignon.png"
+},
+{
+    "name": "Chardonnay",
+    "proof": 0.145,
+    "alcoholType": "Wine",
+    "servingSize": 5,
+    "alcoholPicture": "chardonnay.png"
+},
+{
+    "name": "Champagne",
+    "proof": 0.12,
+    "alcoholType": "Wine",
+    "servingSize": 5,
+    "alcoholPicture": "champagne.png"
+},
+{
+    "name": "Dry White",
+    "proof": 0.11,
+    "alcoholType": "Wine",
+    "servingSize": 5,
+    "alcoholPicture": "dry_white.png"
+},
+{
+    "name": "Malbec",
+    "proof": 0.134,
+    "alcoholType": "Wine",
+    "servingSize": 5,
+    "alcoholPicture": "malbec.png"
+},
+{
+    "name": "Merlot",
+    "proof": 0.125,
+    "alcoholType": "Wine",
+    "servingSize": 5,
+    "alcoholPicture": "merlot.png"
+},
+{
+    "name": "Moscato",
+    "proof": 0.65,
+    "alcoholType": "Wine",
+    "servingSize": 5,
+    "alcoholPicture": "moscato.png"
+},
+{
+    "name": "Pinot Grigio",
+    "proof": 0.14,
+    "alcoholType": "Wine",
+    "servingSize": 5,
+    "alcoholPicture": "pinot_grigio.png"
+},
+{
+    "name": "Pinot Noir",
+    "proof": 0.13,
+    "alcoholType": "Wine",
+    "servingSize": 5,
+    "alcoholPicture": "pinto_noir.png"
+},
+{
+    "name": "Riesling",
+    "proof": 0.065,
+    "alcoholType": "Wine",
+    "servingSize": 5,
+    "alcoholPicture": "riesling.png"
+},
+{
+    "name": "Sangiovese",
+    "proof": 0.135,
+    "alcoholType": "Wine",
+    "servingSize": 5,
+    "alcoholPicture": "sangiovese.png"
+},
+{
+    "name": "Sangria",
+    "proof": 0.11,
+    "alcoholType": "Wine",
+    "servingSize": 5,
+    "alcoholPicture": "sangria.png"
+},
+{
+    "name": "Sauvignon blanc",
+    "proof": 0.145,
+    "alcoholType": "Wine",
+    "servingSize": 5,
+    "alcoholPicture": "sauvignon_blanc.png"
+},
+{
+    "name": "Semillon",
+    "proof": 0.13,
+    "alcoholType": "Wine",
+    "servingSize": 5,
+    "alcoholPicture": "semillon.png"
+},
+{
+    "name": "Sparkling Wine",
+    "proof": 0.10,
+    "alcoholType": "Wine",
+    "servingSize": 5,
+    "alcoholPicture": "sparkling_wine.png"
+},
+{
+    "name": "Syrahs",
+    "proof": 0.12,
+    "alcoholType": "Wine",
+    "servingSize": 5,
+    "alcoholPicture": "syrahs.png"
+},
+{
+    "name": "Table Wine",
+    "proof": 0.11,
+    "alcoholType": "Wine",
+    "servingSize": 5,
+    "alcoholPicture": "table_wine.png"
+},
+{
+    "name": "Zinfandel",
+    "proof": 0.155,
+    "alcoholType": "Wine",
+    "servingSize": 5,
+    "alcoholPicture": "zinfandel.png"
+}
+
+]
